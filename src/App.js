@@ -16,19 +16,19 @@ const App = () => {
     return ( 
     <SafeAreaView style={style.container}>
         <StatusBar backgroundColor={colorGithub} barStyle="light-content"/>
-        <View style={style.content}>
-            <Image accessibilityLabel='Imagem de Perfil de Taylan' style={style.avatar} source={{uri: imageProfileGithub}}/>
-        <text style={[style.defaultText, style.name]}>Taylan Noronha</text>
-        <text style={[style.defaultText, style.nickname]}>L4N0XD</text>
-        <text style={style.defaultText}>I'm an enthusiastic developer, just starting to finally work in an area that I like and have an affinity for.</text>
+            <View style={style.content}>
+                <Image accessibilityLabel='Imagem de Perfil de Taylan' style={style.avatar} source={{uri: imageProfileGithub}}/>
+                <Text>Taylan Noronha</Text>
+                <Text style={[style.defaultText, style.nickname]}>L4N0XD</Text>
+                <Text style={style.defaultText}>I'm an enthusiastic developer, just starting to finally work in an area that I like and have an affinity for.</Text>
         
-        <Pressable onPress={handlePressGoToGithub}>
+                <Pressable onPress={handlePressGoToGithub}>
 
-        <view style = {style.button}>
-            <text style={[style.defaultText, style.textButton]}>Open in GitHub</text>
-        </view>
-        </Pressable>
-        </View>
+                <View style = {style.button}>
+                    <Text style={[style.defaultText, style.textButton]}>Open in GitHub</Text>
+                </View>
+                </Pressable>
+            </View>
     </SafeAreaView>
     );
 };
