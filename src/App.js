@@ -18,7 +18,7 @@ const App = () => {
         <StatusBar backgroundColor={colorGithub} barStyle="light-content"/>
             <View style={style.content}>
                 <Image accessibilityLabel='Imagem de Perfil de Taylan' style={style.avatar} source={{uri: imageProfileGithub}}/>
-                <Text>Taylan Noronha</Text>
+                <Text style={[style.defaultText, style.name]}>Taylan Noronha</Text>
                 <Text style={[style.defaultText, style.nickname]}>L4N0XD</Text>
                 <Text style={style.defaultText}>I'm an enthusiastic developer, just starting to finally work in an area that I like and have an affinity for.</Text>
         
@@ -73,7 +73,7 @@ description: {
 button: {
     backgroundColor: colorDarkFontGithub,
     borderRadius: 10,
-    padding: 20,
+    padding: 13,
 },
 textButton: {
     fontWeight: 'bold', 
